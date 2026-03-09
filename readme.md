@@ -5,16 +5,16 @@ The system recommends movies similar to a selected movie based on textual featur
 
 ---
 
-## 🚀 Project Overview
+## Project Overview
 
 Recommendation systems are widely used in platforms like Netflix, Amazon, and YouTube to suggest relevant content to users.
 
 This project builds a **content-based filtering model** that:
 
-* Processes movie metadata
-* Converts text features into vectors
-* Computes similarity between movies
-* Recommends the most similar movies
+- Processes movie metadata
+- Converts text features into vectors
+- Computes similarity between movies
+- Recommends the most similar movies
 
 The model is then deployed as an interactive web app using Streamlit.
 
@@ -23,43 +23,36 @@ The model is then deployed as an interactive web app using Streamlit.
 ## How It Works
 
 1. **Data Preprocessing**
-
-   * Clean and combine movie metadata
-   * Remove stopwords and unnecessary characters
+   - Clean and combine movie metadata
+   - Remove stopwords and unnecessary characters
 
 2. **Feature Engineering**
-
-   * Combine important columns such as:
-
-     * genres
-     * keywords
-     * overview
-     * cast
-     * director
+   - Combine important columns such as:
+     - genres
+     - keywords
+     - overview
+     - cast
+     - director
 
 3. **Vectorization**
-
-   * Convert text data into numerical vectors using **CountVectorizer**
+   - Convert text data into numerical vectors using **CountVectorizer**
 
 4. **Similarity Calculation**
-
-   * Calculate **Cosine Similarity** between movies
+   - Calculate **Cosine Similarity** between movies
 
 5. **Recommendation**
-
-   * When a user selects a movie, the system returns the **top 10 most similar movies**
+   - When a user selects a movie, the system returns the **top 10 most similar movies**
 
 ---
 
 ## Technologies Used
 
-* Python
-* Pandas
-* NumPy
-* Scikit-learn
-* NLTK
-* Streamlit
-* Pickle
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Streamlit
+- Pickle
 
 ---
 
@@ -138,17 +131,10 @@ Recommended Movies:
 
 ## Future Improvements
 
-* Add movie **posters using TMDB API**
-* Implement **hybrid recommendation (content + collaborative filtering)**
-* Improve UI with movie cards
-* Add **search bar instead of dropdown**
-* Deploy on **Streamlit Cloud**
-
----
-
-## Dataset
-
-The dataset is based on movie metadata from **TMDB (The Movie Database)**.
+- Add movie **posters using TMDB API**
+- Implement **hybrid recommendation (content + collaborative filtering)**
+- Improve UI with movie cards
+- Add **search bar instead of dropdown**
 
 ---
 
